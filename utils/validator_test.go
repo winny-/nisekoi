@@ -3,12 +3,12 @@ package utils
 import (
 	"testing"
 
-	. "github.com/franela/goblin"
+	"github.com/franela/goblin"
 	. "github.com/onsi/gomega"
 )
 
 func Test(t *testing.T) {
-	g := Goblin(t)
+	g := goblin.Goblin(t)
 
 	//special hook for gomega
 	RegisterFailHandler(func(m string, _ ...int) { g.Fail(m) })
